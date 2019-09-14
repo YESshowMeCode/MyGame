@@ -11,10 +11,10 @@ public class TestDialog : MonoBehaviour
 
     void Awake()
     {
-        m_Image = transform.FindChild("Image").GetComponent<Image>();
-        m_UserNameInputField = transform.FindChild("Image/UserNameInputField").GetComponent<InputField>();
-        m_CloseButton = transform.FindChild("CloseButton").GetComponent<Button>();
-        m_SexToggle = transform.FindChild("SexToggle").GetComponent<Toggle>();
+        m_Image = transform.Find("Image").GetComponent<Image>();
+        m_UserNameInputField = transform.Find("Image/UserNameInputField").GetComponent<InputField>();
+        m_CloseButton = transform.Find("CloseButton").GetComponent<Button>();
+        m_SexToggle = transform.Find("SexToggle").GetComponent<Toggle>();
     }
 
     void Start()
