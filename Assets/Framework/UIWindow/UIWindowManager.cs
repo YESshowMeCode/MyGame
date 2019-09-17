@@ -22,8 +22,12 @@ public class UIWindowManager : GameTool.MonoSingleton<UIWindowManager>
 	}
 
 
-	private void ShowUIWindow(UIWindowEnum @enum)
+	public void ShowUIWindow(UIWindowEnum @enum)
 	{
+		if(transform.childCount > 0)
+		{
+			DestroyImmediate(transform.GetChild(0));
+		}
 		UIWindowInfo info = windowInfoDict[(int)@enum];
 		GameObject obj = (GameObject)Instantiate(AssetDatabase.LoadAssetAtPath(info.PrefabFullPath,typeof(GameObject)));
 		obj.transform.SetParent(transform);
@@ -36,6 +40,7 @@ public class UIWindowManager : GameTool.MonoSingleton<UIWindowManager>
 public enum  UIWindowEnum
 {
 	eStart = 0,
+	eStart2,
 }
 
 
@@ -48,6 +53,7 @@ public class UIWindowEnumUtil
 	{
 		var dict = new Dictionary<int,UIWindowInfo>();
 		RegisterUIWindowInfoToDict(dict,UIWindowEnum.eStart,"TextWindow");
+		RegisterUIWindowInfoToDict(dict,UIWindowEnum.eStart2,"Text2Window");
 
 		return dict;
 
