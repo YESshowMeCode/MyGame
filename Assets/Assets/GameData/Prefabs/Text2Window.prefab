@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114933142471850428}
   - component: {fileID: 114122565307936724}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button_Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 222710592358721678}
   - component: {fileID: 114705963559201986}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Img_Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

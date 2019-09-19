@@ -26,7 +26,10 @@ public class UIWindowManager : GameTool.MonoSingleton<UIWindowManager>
 	{
 		if(transform.childCount > 0)
 		{
-			DestroyImmediate(transform.GetChild(0));
+			for(int i = transform.childCount-1;i>=0;i--)
+			{
+				Destroy(transform.GetChild(i).gameObject);
+			}
 		}
 		UIWindowInfo info = windowInfoDict[(int)@enum];
 		GameObject obj = (GameObject)Instantiate(AssetDatabase.LoadAssetAtPath(info.PrefabFullPath,typeof(GameObject)));
