@@ -1,0 +1,10 @@
+int,string,int[],string[]
+id,name,num,dec
+1,总部,1|2,sss|aaa|c出差
+2,游乐场,2|2,sss|aaa|c出差
+4,大学,4|2,sss|aaa|c出差
+3,步行街,3|2,sss|aaa|c出差
+5,沙滩,5|2,sss|aaa|c出差
+6,巨蛋,6|2,sss|aaa|c出差
+7,新天地,7|2,sss|aaa|c出差
+8,浦东,8|2,sss|aaa|c出差
